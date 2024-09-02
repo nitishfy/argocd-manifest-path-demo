@@ -4,6 +4,8 @@ metadata:
   name: app1
   labels:
     app: app1
+  annotations:
+    argocd.argoproj.io/manifest-generate-paths: .  
 spec:
   replicas: 1
   selector:
